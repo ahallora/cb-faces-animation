@@ -1,5 +1,7 @@
 ## Contractbook Faces dynamic picker
 
+![v2](https://user-images.githubusercontent.com/5302751/145304501-48505ca6-8f69-4078-bbfd-73967d3dc114.gif)
+
 ### How to use this
 
 Always make sure that you have the latest batch of faces from team page.
