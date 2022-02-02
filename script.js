@@ -37,6 +37,12 @@ const getFacesFromTeamPage = () => {
   const picked = document.querySelector("#picked");
   const tickerName = document.querySelector("#ticker-name");
 
+  // define faces and sort it randomly
+  const faces = facesRaw
+    .map((value) => ({ value, sort: Math.random() }))
+    .sort((a, b) => a.sort - b.sort)
+    .map(({ value }) => value);
+
   let selected = [];
   let chosen;
   let chosenIndexes;
@@ -47,12 +53,13 @@ const getFacesFromTeamPage = () => {
   let currentIndex = 0;
   let scrollTickDuration = 50;
   let highlightFadeoutDuration = 500;
-  let timePerPick = 5000;
+  let timePerPick = 3500;
 
   const sound = {
     tick: () => {
       const aud = document.createElement("audio");
       aud.src = document.querySelector("#tick").src;
+      aud.volume = 0.035;
       aud.play();
     },
     ding: () => document.querySelector("#ding").play(),
@@ -152,7 +159,6 @@ const getFacesFromTeamPage = () => {
 
   const startPickTimer = () => {
     nextPerson = chosen[selected.length];
-    console.log("Picking next...", nextPerson);
     const face = faces.find((face) => face.name === nextPerson);
     if (!face) {
       console.error("No face found with name ", nextPerson);

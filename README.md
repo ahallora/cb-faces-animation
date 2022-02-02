@@ -16,3 +16,8 @@ Always make sure that you have the latest batch of faces from team page.
 8. Start recording the full screen view with OBS (dont forget to also capture audio output)
 9. Press `A` to start animation
 10. Done :)
+
+# Credits
+
+Music is from Streambeats by Harris Heller.
+Sound effects are from Mixkit.

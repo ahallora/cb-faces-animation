@@ -1,4 +1,4 @@
-const faces = [
+const facesRaw = [
   {
     name: "Niels Martin Brochner",
     src: "https://assets-global.website-files.com/5a8300770e20150001950f4f/60409d589177d648f48f93f9_Niels.png",
@@ -24,44 +24,44 @@ const faces = [
     src: "https://assets-global.website-files.com/5a8300770e20150001950f4f/5fe5a1f02e6bd70da5721473_PIC.png",
   },
   {
-    name: "Kristeen Martin",
-    src: "https://assets-global.website-files.com/5a8300770e20150001950f4f/5fe5b2f552a5f71e72be54b0_PIC-33.png",
+    name: "Bogdan Vuckovic",
+    src: "https://assets-global.website-files.com/5a8300770e20150001950f4f/5feae7cb6b01cd4088544d15_Bogdan%20Vuckovic.png",
   },
   {
     name: "Bryan Seno",
     src: "https://assets-global.website-files.com/5a8300770e20150001950f4f/5feaee40ff832928cc60e4d4_Bryan%20Seno.png",
   },
   {
-    name: "Lukas Lukosevicius",
-    src: "https://assets-global.website-files.com/5a8300770e20150001950f4f/5fe5c030ba74a47092bd381f_PIC-34.png",
+    name: "Carl Weitling",
+    src: "https://assets-global.website-files.com/5a8300770e20150001950f4f/6049fe67d0fdfe0dc07d93fb_Carl%20Weitling.png",
+  },
+  {
+    name: "Kristeen Martin",
+    src: "https://assets-global.website-files.com/5a8300770e20150001950f4f/5fe5b2f552a5f71e72be54b0_PIC-33.png",
   },
   {
     name: "Lindsay C. Angeles (+ her son)",
     src: "https://assets-global.website-files.com/5a8300770e20150001950f4f/5fe5c17a240b191fed9d4b60_PIC-35.png",
   },
   {
-    name: "Bogdan Vuckovic",
-    src: "https://assets-global.website-files.com/5a8300770e20150001950f4f/5feae7cb6b01cd4088544d15_Bogdan%20Vuckovic.png",
-  },
-  {
-    name: "Sean N. Jones",
-    src: "https://assets-global.website-files.com/5a8300770e20150001950f4f/5fe5b3630203957184d20631_PIC.png",
-  },
-  {
-    name: "William Back Kranker",
-    src: "https://assets-global.website-files.com/5a8300770e20150001950f4f/5fe5c1e2e9bf1e378fa7ab76_PIC-36.png",
-  },
-  {
-    name: "Sophie Valerie Manga",
-    src: "https://assets-global.website-files.com/5a8300770e20150001950f4f/5feaee5b788dbc7c781dfb2c_Sophia%20Valerie%20Manga.png",
+    name: "Lukas Lukosevicius",
+    src: "https://assets-global.website-files.com/5a8300770e20150001950f4f/5fe5c030ba74a47092bd381f_PIC-34.png",
   },
   {
     name: "Mat Twells",
     src: "https://assets-global.website-files.com/5a8300770e20150001950f4f/60409d28f3d3cf2339d04e30_Mat%20Twells.png",
   },
   {
-    name: "Carl Weitling",
-    src: "https://assets-global.website-files.com/5a8300770e20150001950f4f/6049fe67d0fdfe0dc07d93fb_Carl%20Weitling.png",
+    name: "Sean N. Jones",
+    src: "https://assets-global.website-files.com/5a8300770e20150001950f4f/5fe5b3630203957184d20631_PIC.png",
+  },
+  {
+    name: "Sophie Valerie Manga",
+    src: "https://assets-global.website-files.com/5a8300770e20150001950f4f/5feaee5b788dbc7c781dfb2c_Sophia%20Valerie%20Manga.png",
+  },
+  {
+    name: "William Back Kranker",
+    src: "https://assets-global.website-files.com/5a8300770e20150001950f4f/5fe5c1e2e9bf1e378fa7ab76_PIC-36.png",
   },
   {
     name: "Mikkel Boris",
@@ -354,5 +354,29 @@ const faces = [
   {
     name: "Su-Ann Vucko",
     src: "https://assets-global.website-files.com/5a8300770e20150001950f4f/5fe5cf12d58836ef1b043145_PIC-48.png",
+  },
+  {
+    name: "Niklas Böcking",
+    src: "images/Niklas Böcking.png",
+  },
+  {
+    name: "Josephine Lynggaard Sloth",
+    src: "images/Josephine Lynggaard Sloth.png",
+  },
+  {
+    name: "Kelly Strong",
+    src: "images/Kelly Strong.png",
+  },
+  {
+    name: "Tony Tan",
+    src: "images/Tony Tan.png",
+  },
+  {
+    name: "Kamil Jakubczyk",
+    src: "images/Kamil Jakubczyk.png",
+  },
+  {
+    name: "Elly Hsieh",
+    src: "images/Elly Hsieh.png",
   },
 ];

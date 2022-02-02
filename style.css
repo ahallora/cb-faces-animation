@@ -9,6 +9,15 @@ body {
   padding: 20px 40px;
 }
 
+video#wave {
+    position: absolute;
+    top: -15vh;
+    left: -25vw;
+    height: 150vh;
+    mix-blend-mode: color-dodge;
+    z-index: -1;
+}
+
 #root.selected_view #ticker {
   opacity: 0;
   height: 0;
@@ -20,7 +29,7 @@ body {
 }
 
 #root.selected_view #picked {
-  transform: translate3d(0, 200px, 0);
+  transform: translate3d(0, 35vh, 0);
 }
 
 #root {
@@ -33,7 +42,7 @@ body {
 #ticker {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(18, 1fr);
+  grid-template-columns: repeat(19, 1fr);
   grid-gap: 20px;
   padding: 25px 0;
   transition: all 1000ms ease-in-out;
@@ -42,7 +51,8 @@ body {
 
 
 #ticker-name {
-  font-size: 40px;
+  font-size: 3rem;
+  margin-top: 40px;
   font-family: "Archivo";
   text-align: center;
   font-weight: bold;
@@ -96,8 +106,8 @@ body {
 
 
 #picked {
+  min-height: 33vh;
   width: 100%;
-  height: 30vh;
   flex: none;
   display: flex;
   align-items: center;
@@ -126,19 +136,19 @@ body {
 
 #picked .item span {
   opacity: 1;
-  font-size: 1rem;  
+  font-size: 1.5rem;
   font-family: "Archivo";
   text-align: center;
   font-weight: bold;
   color: #fff;
   margin-top: 2vh;
+  max-width: 20vw;
   text-shadow: 0 0 20px #ffffff75;
   transition: all 100ms ease-in-out;
 }
 
-
 #picked .item .image {
-  width: 110px;
+  width: 200px;
   animation: 1.5s pickedAnim infinite ease-in-out;
   backface-visibility: visible;
   transform-style: preserve-3d;
@@ -176,7 +186,6 @@ body {
 
 @keyframes pickedAnim {
   50% {
-    /* rotate3d(0, 1, 0, 179deg) */
     transform: translateY(-10px);
   }
 }
@@ -188,8 +197,6 @@ body {
     width: 70%;
   }
 }
-
-
 
 @keyframes tickIn {
   0, 100%: {
