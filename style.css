@@ -10,12 +10,12 @@ body {
 }
 
 video#wave {
-    position: absolute;
-    top: -15vh;
-    left: -25vw;
-    height: 150vh;
-    mix-blend-mode: color-dodge;
-    z-index: -1;
+  position: absolute;
+  top: -15vh;
+  left: -25vw;
+  height: 150vh;
+  mix-blend-mode: color-dodge;
+  z-index: -1;
 }
 
 #root.selected_view #ticker {
@@ -48,7 +48,6 @@ video#wave {
   transition: all 1000ms ease-in-out;
   opacity: 0;
 }
-
 
 #ticker-name {
   font-size: 3rem;
@@ -87,23 +86,22 @@ video#wave {
 }
 
 #ticker .item.selected .image {
-    opacity: 1;
-    position: relative;
-    border-color: #00e9a7;
+  opacity: 1;
+  position: relative;
+  border-color: #00e9a7;
 }
 
 #ticker .item.selected .image:before {
-    content: "";
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #00e9a7;
-    mix-blend-mode: color-burn;
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #00e9a7;
+  mix-blend-mode: color-burn;
 }
-
 
 #picked {
   min-height: 33vh;
@@ -199,9 +197,11 @@ video#wave {
 }
 
 @keyframes tickIn {
-  0, 100%: {
+  0%,
+  100% {
     opacity: 0;
   }
+
   50% {
     transform: scale(1.5);
     box-shadow: 0 0 20px #fff;
