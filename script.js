@@ -5,7 +5,14 @@ const getFacesFromTeamPage = () => {
     .filter((x) => x.parentNode.tagName !== "A" && !x.src.endsWith(".svg"))
     .map((x) => ({ name: x.alt, src: x.src }));
 
-  console.log({ faces });
+  console.log(
+    "const facesRaw = ",
+    faces.map((face) => ({
+      name: face.name,
+      src: `images/${face.name}.png`,
+    })),
+    "];"
+  );
 
   function forceDownload(url, fileName) {
     var xhr = new XMLHttpRequest();
@@ -16,7 +23,7 @@ const getFacesFromTeamPage = () => {
       var imageUrl = urlCreator.createObjectURL(this.response);
       var tag = document.createElement("a");
       tag.href = imageUrl;
-      tag.download = fileName;
+      tag.download = url.endsWith(".png") ? fileName : `${fileName}.png`;
       document.body.appendChild(tag);
       tag.click();
       document.body.removeChild(tag);
@@ -83,6 +90,9 @@ const getFacesFromTeamPage = () => {
     const faceshtml = faces
       .map((face, index) => generateItem(face, index))
       .join("");
+    ticker.style.gridTemplateColumns = `repeat(${Math.ceil(
+      faces.length / 5
+    )}, 1fr)`;
     ticker.innerHTML = faceshtml;
   };
 

@@ -42,7 +42,7 @@ video#wave {
 #ticker {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(19, 1fr);
+  grid-template-columns: repeat(20, 1fr);
   grid-gap: 20px;
   padding: 25px 0;
   transition: all 1000ms ease-in-out;
@@ -197,11 +197,6 @@ video#wave {
 }
 
 @keyframes tickIn {
-  0%,
-  100% {
-    opacity: 0;
-  }
-
   50% {
     transform: scale(1.5);
     box-shadow: 0 0 20px #fff;
