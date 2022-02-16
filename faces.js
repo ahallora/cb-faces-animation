@@ -367,4 +367,8 @@ const facesRaw = [
     name: "Ammar Naqvi",
     src: "images/Ammar Naqvi.png",
   },
+  {
+    name: "Markku Vuorinen",
+    src: "images/Markku Vuorinen.png",
+  },
 ];
