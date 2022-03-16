@@ -371,4 +371,12 @@ const facesRaw = [
     name: "Markku Vuorinen",
     src: "images/Markku Vuorinen.png",
   },
+  {
+    name: "William Obam",
+    src: "images/William Obam.png",
+  },
+  {
+    name: "Nikita Shilenok",
+    src: "images/Nikita Shilenok.png",
+  },
 ];
