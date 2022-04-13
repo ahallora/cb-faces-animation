@@ -379,4 +379,20 @@ const facesRaw = [
     name: "Nikita Shilenok",
     src: "images/Nikita Shilenok.png",
   },
+  {
+    name: "Andrei Crnkovic",
+    src: "images/Andrei Crnkovic.png",
+  },
+  {
+    name: "Claire Floquet",
+    src: "images/Claire Floquet.png",
+  },
+  {
+    name: "Kate Erwin",
+    src: "images/Kate Erwin.png",
+  },
+  {
+    name: "Nick Schaefer",
+    src: "images/Nick Schaefer.png",
+  },
 ];
