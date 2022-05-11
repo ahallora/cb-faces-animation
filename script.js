@@ -58,9 +58,9 @@ const getFacesFromTeamPage = () => {
 
   let tickerTimer, pickTimer;
   let currentIndex = 0;
-  let scrollTickDuration = 50;
+  let scrollTickDuration = 30;
   let highlightFadeoutDuration = 500;
-  let timePerPick = 3500;
+  let timePerPick = 2500;
 
   const sound = {
     tick: () => {
