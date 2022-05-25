@@ -411,4 +411,20 @@ const facesRaw = [
     name: "Marcelina Kopecka",
     src: "images/Marcelina Kopecka.png",
   },
+  {
+    name: "Daniel Jeal",
+    src: "images/Daniel Jeal.png",
+  },
+  {
+    name: "Povilas Andrijauskas",
+    src: "images/Povilas Andrijauskas.png",
+  },
+  {
+    name: "Viktorija Salunova",
+    src: "images/Viktorija Salunova.png",
+  },
+  {
+    name: "Yossra Benzad",
+    src: "images/Yossra Benzad.png",
+  },
 ];
